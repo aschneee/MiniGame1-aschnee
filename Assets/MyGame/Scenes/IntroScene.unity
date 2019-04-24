@@ -245,6 +245,36 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114159994271330828, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159994271330828, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159994271330828, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159994271330828, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.854902
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159994271330828, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.87843144
+      objectReference: {fileID: 0}
+    - target: {fileID: 114159994271330828, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.3019608
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8d74153670c214ea0b827420889bad, type: 2}
   m_IsPrefabAsset: 0
