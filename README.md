@@ -3,7 +3,7 @@
 **Spring Catch**
 In this Game the User plays a little bug, which has to collect flowers in order to build his own home. The User has to help him collect
 those flowers. While trying to collect as many flowers as possible he has to avoid the bees because those can kill the bug. 
-The little bug has three lifes and the Game ends when he lost all three.
+The little bug has three lifes and the Game ends when he has lost all three.
 
 + **Progress:** 2%
 + **Status:** 
@@ -28,8 +28,8 @@ The little bug has three lifes and the Game ends when he lost all three.
 // 
 + **Resources:** 
 
-- teaching materials by smers		
-- All imagery by Alina Schneeberger, feel free to use
+	- teaching materials by smers		
+	- All imagery by Alina Schneeberger, feel free to use
 	
 
 
