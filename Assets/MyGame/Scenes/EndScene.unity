@@ -250,6 +250,31 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114758300677652186, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_Text
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 224026791019332902, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.1298
+      objectReference: {fileID: 0}
+    - target: {fileID: 224026791019332902, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.1298
+      objectReference: {fileID: 0}
+    - target: {fileID: 224026791019332902, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2.1298
+      objectReference: {fileID: 0}
+    - target: {fileID: 224026791019332902, guid: ff8d74153670c214ea0b827420889bad,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -169
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8d74153670c214ea0b827420889bad, type: 2}
   m_IsPrefabAsset: 0
