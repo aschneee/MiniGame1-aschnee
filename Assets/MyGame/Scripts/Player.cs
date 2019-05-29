@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
     private void Move()
     {
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
-        var newPosX = Mathf.Clamp(transform.position.x + deltaX, -300f, 300f);
+        var newPosX = Mathf.Clamp(transform.position.x + deltaX, -5.3f, 5.3f);
 
         transform.position = new Vector2(newPosX, transform.position.y);
     }
