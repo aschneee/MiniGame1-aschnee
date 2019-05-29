@@ -5,9 +5,10 @@ using TMPro;
 
 public class CollectibleFlower : MonoBehaviour
 {
-    private int score = 0;
+    //private int score = 0;
     // dadurch kann ich auf die Komponente zugreifen in Unity dann noch zuweisen
-    public TextMeshProUGUI pointsScore; 
+    public TextMeshProUGUI pointsScore;
+    public MyScore score;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,9 +16,9 @@ public class CollectibleFlower : MonoBehaviour
 
         if (collision.gameObject.name == "bug")
         {
-            score += 5;
+            score.score += 5;
             Debug.Log("score " + score);
-            pointsScore.text = score.ToString();
+            pointsScore.text = score.score.ToString();
 
         }
     }
