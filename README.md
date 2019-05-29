@@ -29,8 +29,7 @@ The little bug has three lifes and the Game ends when he has lost all three.
 + **Resources:** 
 
 	- teaching materials by smers		
-	- All imagery by Alina Schneeberger, feel free to use
-	
+	- background elements: https://www.freepik.com/free-vector/fairy-tale-forest-background_3327511.htm 	
 
 
  

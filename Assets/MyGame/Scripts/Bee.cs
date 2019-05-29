@@ -10,7 +10,7 @@ public class Bee : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.name == "Bug")
+        if (collision.gameObject.name == "bug")
         {
             Destroy(gameObject);
         }
