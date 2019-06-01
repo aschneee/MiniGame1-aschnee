@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 903428660}
-  maxTime: 5
+  maxTime: 60
   deathScene: EndScene
 --- !u!114 &903428660
 MonoBehaviour:
