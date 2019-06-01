@@ -9,9 +9,11 @@ public class Player : MonoBehaviour {
     private float moveSpeed = 5.0f;
     private int lives = 3;
     private int liveObjectIndex = 0;
+    private int flowers = 0;
 
     public string deathScene = "EndScene";
     public GameObject[] hearts;
+    public MyScore score;
 
     private void Move()
     {
@@ -33,6 +35,10 @@ public class Player : MonoBehaviour {
         {
             DecreaseLive(1);
         }
+        else if (col.gameObject.name == "flower(Clone)")
+        {
+            CollectFlower();
+        }
     }
 
     private void DecreaseLive(int amount)
@@ -46,5 +52,11 @@ public class Player : MonoBehaviour {
         {
             SceneManager.LoadScene(deathScene);
         }
+    }
+
+    private void CollectFlower ()
+    {
+        flowers++;
+        score.flowers++;
     }
 }

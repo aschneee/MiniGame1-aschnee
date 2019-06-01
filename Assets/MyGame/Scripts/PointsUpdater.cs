@@ -7,14 +7,12 @@ public class PointsUpdater : MonoBehaviour {
 
     public MyScore score;
     public TextMeshProUGUI pointsText;
+    public TextMeshProUGUI flowerAmountText;
+    public string flowerText = "flowers: ";
 
 	// Use this for initialization
 	void Start () {
         pointsText.text = score.score.ToString();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+        flowerAmountText.text = flowerText + score.flowers.ToString();
 	}
 }
