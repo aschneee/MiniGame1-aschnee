@@ -18,7 +18,7 @@ public class CollectibleFlower : MonoBehaviour
         {
             score.score += 5;
             Debug.Log("score " + score);
-            pointsScore.text = score.score.ToString();
+            //pointsScore.text = score.score.ToString();
 
         }
     }
@@ -26,5 +26,9 @@ public class CollectibleFlower : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("CollisionEvent");
+    }
+    private void Update()
+    {
+        pointsScore.text = score.score.ToString();
     }
 }

@@ -7,4 +7,5 @@ using UnityEngine;
 public class MyScore : ScriptableObject
 {
     public int score = 0;
+    public int flowers = 0;
 }

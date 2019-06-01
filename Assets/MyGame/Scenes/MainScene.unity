@@ -113,6 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &37164892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1797538222633146, guid: e2063cca5022fe84abc273ca673baa64,
+    type: 2}
+  m_PrefabInternal: {fileID: 1456353708}
 --- !u!1001 &78539827
 Prefab:
   m_ObjectHideFlags: 0
@@ -328,6 +333,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224675174083323588, guid: ff8d74153670c214ea0b827420889bad,
     type: 2}
   m_PrefabInternal: {fileID: 78539827}
+--- !u!1 &103798477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1797538222633146, guid: e2063cca5022fe84abc273ca673baa64,
+    type: 2}
+  m_PrefabInternal: {fileID: 253321673}
 --- !u!1 &155585776
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +803,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114525938561928392, guid: de321348439109445bc5f3d375d7ade3,
+        type: 2}
+      propertyPath: hearts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4489522248940540, guid: de321348439109445bc5f3d375d7ade3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.74
@@ -830,6 +845,21 @@ Prefab:
       propertyPath: pointsScore
       value: 
       objectReference: {fileID: 224603055}
+    - target: {fileID: 114525938561928392, guid: de321348439109445bc5f3d375d7ade3,
+        type: 2}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1473208018}
+    - target: {fileID: 114525938561928392, guid: de321348439109445bc5f3d375d7ade3,
+        type: 2}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 103798477}
+    - target: {fileID: 114525938561928392, guid: de321348439109445bc5f3d375d7ade3,
+        type: 2}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 37164892}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de321348439109445bc5f3d375d7ade3, type: 2}
   m_IsPrefabAsset: 0
@@ -849,6 +879,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04c333830e0e544188a55d8c3f3b1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathScene: EndScene
+  hearts:
+  - {fileID: 1473208018}
+  - {fileID: 103798477}
+  - {fileID: 37164892}
 --- !u!1 &1069185547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1114,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2063cca5022fe84abc273ca673baa64, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1473208018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1797538222633146, guid: e2063cca5022fe84abc273ca673baa64,
+    type: 2}
+  m_PrefabInternal: {fileID: 397768512}
 --- !u!1 &1534551391
 GameObject:
   m_ObjectHideFlags: 0

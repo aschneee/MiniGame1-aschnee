@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CollectibleBee : MonoBehaviour
 {
@@ -9,7 +10,6 @@ public class CollectibleBee : MonoBehaviour
     // dadurch kann ich auf die Komponente zugreifen in Unity dann noch zuweisen
     public TextMeshProUGUI pointsScore;
     public MyScore score;
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,12 +20,6 @@ public class CollectibleBee : MonoBehaviour
             score.score -= 10;
             Debug.Log("score " + score);
             pointsScore.text = score.score.ToString();
-
         }
-    }
-	
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("CollisionEvent");
     }
 }

@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
     private const string AXISHORIZONTAL = "Horizontal";
     private float moveSpeed = 5.0f;
+    private int lives = 3;
+    private int liveObjectIndex = 0;
+
+    public string deathScene = "EndScene";
+    public GameObject[] hearts;
 
     private void Move()
     {
@@ -15,10 +21,30 @@ public class Player : MonoBehaviour {
         transform.position = new Vector2(newPosX, transform.position.y);
     }
 
-
-	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         Move();
 	}
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.name == "bee(Clone)")
+        {
+            DecreaseLive(1);
+        }
+    }
+
+    private void DecreaseLive(int amount)
+    {
+        lives -= amount;
+
+        hearts[liveObjectIndex].SetActive(false);
+        liveObjectIndex++;
+
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene(deathScene);
+        }
+    }
 }
