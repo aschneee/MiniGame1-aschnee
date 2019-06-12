@@ -5,10 +5,11 @@ In this Game the User plays a little bug, which has to collect flowers in order 
 those flowers. While trying to collect as many flowers as possible he has to avoid the bees because those can kill the bug. 
 The little bug has three lifes and the Game ends when he has lost all three.
 
-+ **Progress:** 2%
++ **Progress:** 90%
 + **Status:** 
 	- concept finished
-	- changing scenes works
+	- necessary game functions work
+	- flower house of bug missing
  
 + **Trailer:** 
 + **PLAY THE GAME HERE:** 
@@ -24,10 +25,10 @@ The little bug has three lifes and the Game ends when he has lost all three.
 
  
 + **Controles:** 
-
-// 
+	- arrow key left, arrow key right, mouse click (in menu)
+	
 + **Resources:** 
-
+**
 	- teaching materials by smers		
 	- background elements: https://www.freepik.com/free-vector/fairy-tale-forest-background_3327511.htm 	
 
@@ -47,11 +48,15 @@ The little bug has three lifes and the Game ends when he has lost all three.
 
 
 + **Limitations:
-** //  
+** 
+	- This Game is very simple
+	
  
 + **Lessons Learned:
 **   
-	- How to switch between scenes   
+	- How to switch between scenes
+	- Timer
+	- Using Scriptable Objects
 	
 
 
