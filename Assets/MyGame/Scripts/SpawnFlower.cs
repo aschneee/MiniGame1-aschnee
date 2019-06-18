@@ -7,7 +7,12 @@ public class SpawnFlower : MonoBehaviour
     public Flower flowerPrefab;
     public GameObject flowerParent;
 
-      private void Update()
+    private float localMaxPos = 5f;
+    private int rangeMax = -10;
+    private int rangeMin = -1;
+    private int spawnDelay = 3;
+
+    private void Update()
     {
         //SpawnFl();
     }
@@ -16,7 +21,7 @@ public class SpawnFlower : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(spawnDelay);
             SpawnFl();
         }
 
@@ -28,8 +33,8 @@ public class SpawnFlower : MonoBehaviour
         float flowerSize = 1f;
         flowerClone.transform.localScale = new Vector3(flowerSize, flowerSize, 0);
         flowerClone.transform.SetParent(flowerParent.transform); //gibt Parent
-        flowerClone.transform.localPosition = new Vector3(UnityEngine.Random.Range(-5f, +5f), flowerParent.transform.position.y, 0f); //setze lokale Pos
-        flowerClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, UnityEngine.Random.Range(-10, -1));
+        flowerClone.transform.localPosition = new Vector3(UnityEngine.Random.Range(-localMaxPos, +localMaxPos), flowerParent.transform.position.y, 0f); //setze lokale Pos
+        flowerClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, UnityEngine.Random.Range(rangeMax, rangeMin));
     }
 
   
