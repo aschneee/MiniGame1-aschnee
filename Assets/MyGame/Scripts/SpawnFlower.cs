@@ -29,7 +29,7 @@ public class SpawnFlower : MonoBehaviour
         flowerClone.transform.localScale = new Vector3(flowerSize, flowerSize, 0);
         flowerClone.transform.SetParent(flowerParent.transform); //gibt Parent
         flowerClone.transform.localPosition = new Vector3(UnityEngine.Random.Range(-5f, +5f), flowerParent.transform.position.y, 0f); //setze lokale Pos
-        flowerClone.GetComponent<Rigidbody2D>().velocity = new Vector2(UnityEngine.Random.Range(-2, 2), UnityEngine.Random.Range(-10, -1));
+        flowerClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, UnityEngine.Random.Range(-10, -1));
     }
 
   

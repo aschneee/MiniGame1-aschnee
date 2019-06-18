@@ -29,7 +29,7 @@ public class SpawnBee : MonoBehaviour
         beeClone.transform.localScale = new Vector3(beeSize, beeSize, 0);
         beeClone.transform.SetParent(beeParent.transform); //gibt Parent
         beeClone.transform.localPosition = new Vector3(UnityEngine.Random.Range(-5f, +5f), beeParent.transform.position.y, 0f); //setze lokale Pos
-        beeClone.GetComponent<Rigidbody2D>().velocity = new Vector2(UnityEngine.Random.Range(-2, 2), UnityEngine.Random.Range(-10, -1));
+        beeClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, UnityEngine.Random.Range(-10, -1));
     }
 
   
