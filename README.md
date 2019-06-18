@@ -40,7 +40,7 @@ The little bug has three lifes and the Game ends when he has lost all three.
 + **Concept:
 **
 <div>
-<img src="./Screenshots/konzept_master.JPEG" width="250">
+<img src="./Screenshots/konzept_master.jpeg" width="250">
 </div>
 	
 + **In game Screenshots:**
