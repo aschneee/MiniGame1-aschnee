@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour {
+public class Player : MonoBehaviour
+{
 
     private const string AXISHORIZONTAL = "Horizontal";
     private float moveSpeed = 5.0f;

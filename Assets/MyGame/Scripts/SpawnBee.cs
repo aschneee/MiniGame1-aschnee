@@ -7,7 +7,12 @@ public class SpawnBee : MonoBehaviour
     public Bee beePrefab;
     public GameObject beeParent;
 
-      private void Update()
+    private float localMaxPos = 5f;
+    private int rangeMax = -10;
+    private int rangeMin = -1;
+    private int spawnDelayBee = 8;
+
+    private void Update()
     {
         //SpawnFl();
     }
@@ -16,7 +21,7 @@ public class SpawnBee : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(8);
+            yield return new WaitForSeconds(spawnDelayBee);
             SpawnBe();
         }
 
@@ -28,8 +33,8 @@ public class SpawnBee : MonoBehaviour
         float beeSize = 1f;
         beeClone.transform.localScale = new Vector3(beeSize, beeSize, 0);
         beeClone.transform.SetParent(beeParent.transform); //gibt Parent
-        beeClone.transform.localPosition = new Vector3(UnityEngine.Random.Range(-5f, +5f), beeParent.transform.position.y, 0f); //setze lokale Pos
-        beeClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, UnityEngine.Random.Range(-10, -1));
+        beeClone.transform.localPosition = new Vector3(UnityEngine.Random.Range(-localMaxPos, +localMaxPos), beeParent.transform.position.y, 0f); //setze lokale Pos
+        beeClone.GetComponent<Rigidbody2D>().velocity = new Vector2(0, UnityEngine.Random.Range(rangeMax, rangeMin));
     }
 
   

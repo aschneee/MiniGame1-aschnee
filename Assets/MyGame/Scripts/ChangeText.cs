@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 
 //Klassendeklaration
-public class ChangeText : MonoBehaviour {
+public class ChangeText : MonoBehaviour
+{
 
     // deklariert Variable und Zuweisung
     public Text myText;

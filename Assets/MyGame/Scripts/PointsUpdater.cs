@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PointsUpdater : MonoBehaviour {
+public class PointsUpdater : MonoBehaviour
+{
 
     public MyScore score;
     public TextMeshProUGUI pointsText;
@@ -12,7 +13,8 @@ public class PointsUpdater : MonoBehaviour {
     public GameObject[] flowerScreens;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         pointsText.text = score.score.ToString();
         flowerAmountText.text = flowerText + score.flowers.ToString();
         ActivateFlowers();
