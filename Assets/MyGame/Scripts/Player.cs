@@ -10,6 +10,10 @@ public class Player : MonoBehaviour {
     private int lives = 3;
     private int liveObjectIndex = 0;
     private int flowers = 0;
+    private string beeObjectName = "bee(Clone)";
+    private string flowerObjectName = "flower(Clone)";
+    private float maxPlayerXPos = 5.3f;
+    private int liveDecreaseAmount = 1;
 
     public string deathScene = "EndScene";
     public GameObject[] hearts;
@@ -18,7 +22,7 @@ public class Player : MonoBehaviour {
     private void Move()
     {
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
-        var newPosX = Mathf.Clamp(transform.position.x + deltaX, -5.3f, 5.3f);
+        var newPosX = Mathf.Clamp(transform.position.x + deltaX, -maxPlayerXPos, maxPlayerXPos);
 
         transform.position = new Vector2(newPosX, transform.position.y);
     }
@@ -31,11 +35,11 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name == "bee(Clone)")
+        if (col.gameObject.name == beeObjectName)
         {
-            DecreaseLive(1);
+            DecreaseLive(liveDecreaseAmount);
         }
-        else if (col.gameObject.name == "flower(Clone)")
+        else if (col.gameObject.name == flowerObjectName)
         {
             CollectFlower();
         }
