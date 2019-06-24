@@ -5,15 +5,16 @@ In this Game the User plays a little bug, which has to collect flowers in order 
 those flowers. While trying to collect as many flowers as possible he has to avoid the bees because those can kill the bug. 
 The little bug has three lifes and the Game ends when he has lost all three.
 
-+ **Progress:** 90%
++ **Progress:** 100%
 + **Status:** 
 	- concept finished
 	- necessary game functions work
-	- flower house of bug missing
+	- flower house replaced by different count of flowers in the end scene
  
-+ **Trailer:** 
++ **Trailer:
+	- https://youtu.be/kErXYmcN68c
 + **PLAY THE GAME HERE:** 
-	- Game is not finished
+	- 
 + **Development Platform:** 
 	Unity 2018.2.14f1, 
 	Visual Studio 15.9.4, 
